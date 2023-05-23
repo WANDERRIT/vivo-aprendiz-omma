@@ -1,49 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-header .logo{
-    background-color:#FFC107;
+header .logo {
+    background-color: #FFC107;
     text-align: center;
 }
-header .menu{
-    background-color:  #FFA000;
-    display:flex ;
+
+header .menu {
+    background-color: #FFA000;
+    display: flex;
     justify-content: center;
 }
 
-header .menu ul{
-     margin: 0;  /*margin = espaçamento externo */
-     list-style: none;
-}
-header .menu ul li{
-display: inline-block;
- padding: 10px 15px;   /* espaçamento interno | 10px pra cima e pra baixo, 15px pras laterais  */
-}
-header .menu ul li a {
-    text-decoration:none ; /* tirar sublinhado */
-    color:white; /* muda a cor do texto */
+header .menu ul {
+    margin: 0;
+    /*margin = espaçamento externo */
+    list-style: none;
 }
 
-main section.banner{
-height: 600px;
-background-image: url(../imagens/banner\ omma.png);
-background-size: cover; /*cobre todo o elemento section*/
+header .menu ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    /* espaçamento interno | 10px pra cima e pra baixo, 15px pras laterais  */
 }
- main section.banner .container{
+
+header .menu ul li a {
+    text-decoration: none;
+    /* tirar sublinhado */
+    color: white;
+    /* muda a cor do texto */
+}
+
+main section.banner {
+    height: 600px;
+    background-image: url(../imagens/banner\ omma.png);
+    background-size: cover;
+    /*cobre todo o elemento section*/
+}
+
+main section.banner .container {
     display: flex;
-    justify-content: flex-end ; /* alinhamento horizontal pra direita */
-    align-items: center; /* alinhamento vertical centralizado */
-    height: 600px;  
- }
-main section.banner h1{
+    justify-content: flex-end;
+    /* alinhamento horizontal pra direita */
+    align-items: center;
+    /* alinhamento vertical centralizado */
+    height: 600px;
+}
+
+main section.banner h1 {
     color: white;
     font-size: 70px;
     text-transform: lowercase;
     text-shadow: 0px 0px 4px coral;
-    padding: 100px ;
+    padding: 100px;
 }
- 
+
+main section.receitas-principais .container {
+    min-height: 600px;
+    width: 1200px; /* largura */
+    margin: 0 auto; /* espaçamento automatico para centralizar o container */
+}
+    
+
+
+main section.receitas-principais h2 {
+    color: #FFA000;
+    text-align: center;
+    font-weight: bold;/*grossura da letra*/
+    font-size: 55px;
+    text-transform: lowercase;
+}
+
+.lista-receitas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;/*todos os elementos alinhados ao topo*/
+}
+
+.lista-receitas article{
+/*border: 1px solid orange;*/
+width: 345px; /*largura article*/
+text-align: center; /*Centralizando tudo no article*/
+}
+
+.lista-receitas article .thumb{
+    width: 100%; /*imagem vai ocupar 100% do article*/
+    height: 265px; /*altura do thumb*/
+    /*background-color: #FFA000;*/ /*para teste*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.lista-receitas article h3{
+    font-size: 26px;
+}
+
+
+.lista-receitas article a{
+    background-color: #176902;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 25px;
+    text-decoration: none;
+    border-radius: 3px;
+}
