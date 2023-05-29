@@ -62,48 +62,57 @@ main section.banner h1 {
 
 main section.receitas-principais .container {
     min-height: 600px;
-    width: 1200px; /* largura */
-    margin: 0 auto; /* espaçamento automatico para centralizar o container */
+    width: 1200px;
+    /* largura */
+    margin: 0 auto;
+    /* espaçamento automatico para centralizar o container */
 }
-    
+
 
 
 main section.receitas-principais h2 {
     color: #FFA000;
     text-align: center;
-    font-weight: bold;/*grossura da letra*/
+    font-weight: bold;
+    /*grossura da letra*/
     font-size: 55px;
     text-transform: lowercase;
 }
 
-.lista-receitas{
+.lista-receitas {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;/*todos os elementos alinhados ao topo*/
+    align-items: flex-start;
+    /*todos os elementos alinhados ao topo*/
 }
 
-.lista-receitas article{
-/*border: 1px solid orange;*/
-width: 345px; /*largura article*/
-text-align: center; /*Centralizando tudo no article*/
+.lista-receitas article {
+    /*border: 1px solid orange;*/
+    width: 345px;
+    /*largura article*/
+    text-align: center;
+    /*Centralizando tudo no article*/
 }
 
-.lista-receitas article .thumb{
-    width: 100%; /*imagem vai ocupar 100% do article*/
-    height: 265px; /*altura do thumb*/
-    /*background-color: #FFA000;*/ /*para teste*/
+.lista-receitas article .thumb {
+    width: 100%;
+    /*imagem vai ocupar 100% do article*/
+    height: 265px;
+    /*altura do thumb*/
+    /*background-color: #FFA000;*/
+    /*para teste*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
 }
 
-.lista-receitas article h3{
+.lista-receitas article h3 {
     font-size: 26px;
 }
 
 
-.lista-receitas article a{
+.lista-receitas article a {
     background-color: #176902;
     color: white;
     font-size: 24px;
@@ -111,4 +120,53 @@ text-align: center; /*Centralizando tudo no article*/
     padding: 5px 25px;
     text-decoration: none;
     border-radius: 3px;
+}
+
+section.banner-secundario {
+    background-image: url(/imagens/comer-e-viver.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section.banner-secundario .container {
+    min-height: 600px;
+    width: 1200px;
+    /* largura */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;/*itens em coluna*/
+    justify-content: center;/*alinhamneto centralizado na vertical*/
+}
+
+section.banner-secundario .container h2{
+    font-size: 62px;
+    color:white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.banner-secundario .container p{
+    color: white;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 450px;
+}
+
+footer{
+    background-color: #FFA000;
+    color: white;
+    font-weight: 700px;
+    font-size: 18px;
+}
+
+footer .container{
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer p {
+    padding: 0 15px;
 }
