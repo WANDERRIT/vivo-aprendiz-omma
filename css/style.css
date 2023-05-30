@@ -48,11 +48,10 @@ main section.banner {
 
 main section.banner .container {
     display: flex;
-    justify-content: flex-end;
-    /* alinhamento horizontal pra direita */
-    align-items: center;
-    /* alinhamento vertical centralizado */
+    justify-content: flex-end;/* alinhamento horizontal pra direita */
+    align-items: center;/* alinhamento vertical centralizado */
     height: 600px;
+    max-width: 100%;
 }
 
 main section.banner h1 {
@@ -66,6 +65,7 @@ main section.banner h1 {
 main section.receitas-principais .container {
     min-height: 600px;
     width: 1200px;
+    max-width: 100%;
     /* largura */
     margin: 0 auto;
     /* espaçamento automatico para centralizar o container */
@@ -134,8 +134,8 @@ section.banner-secundario {
 
 section.banner-secundario .container {
     min-height: 600px;
-    width: 1200px;
-    /* largura */
+    width: 1200px;/* largura */
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;/*itens em coluna*/
@@ -147,6 +147,7 @@ section.banner-secundario .container h2{
     font-size: 62px;
     color:white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
 }
 
 section.banner-secundario .container p{
@@ -154,6 +155,7 @@ section.banner-secundario .container p{
     font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 450px;
+    max-width: 100%;
 }
 
 footer{
@@ -165,6 +167,7 @@ footer{
 
 footer .container{
     width: 1200px;
+    max-width: 100%;
     margin:0 auto;
     display: flex;
     justify-content: flex-start;
@@ -181,6 +184,7 @@ footer p {
 main section.todas-receitas .container{
 min-width: 600px;
 width: 1200px;
+max-width: 100%;
 margin: 0 auto;
 padding: 50px 0;
 
@@ -215,6 +219,7 @@ main section.todas-receitas h2{
 }*/
 main section.receita .container{
     color: #FFA000;
+    max-width: 100%;
 }
 
 main section.receita .risoto img{
@@ -222,6 +227,7 @@ main section.receita .risoto img{
     width: 500px;
     height: 300px;
     margin: 20px;
+    border-radius: 5px;
 }
 
 .tag{
@@ -250,7 +256,9 @@ aside article.receita-relacionada .thumb {
     width: 100%;
     height: 200px;
     background-size: cover;
-    background-position: center;}
+    background-position: center;
+border-radius: 4px;
+}
 
     aside article.receita-relacionada h3 {
         padding: 10px;
@@ -272,9 +280,9 @@ aside article.receita-relacionada .thumb {
     background-size: cover;
     background-position: center;
 }
-.banner-contato .container,
-section.contato .container {
+.banner-contato .container,section.contato .container {
     width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 50px 0;
     display: flex;
@@ -282,6 +290,7 @@ section.contato .container {
 .banner-contato .container h1 {
     color: #fff;
     font-size: 70px;
+    max-width: 100%;
 }
 .banner-vertical {
     width: 30%;
@@ -334,3 +343,43 @@ section.contato .container {
     border-color: green;
     cursor: pointer;
 }
+@media(max-width: 1100px){
+    .container {width:900px !important;}
+
+
+main section.banner .container{justify-content: flex-start;}
+
+ .lista-receitas article{width: 250px; }
+
+ .receita-individual main{
+    width: 500px;
+ }
+
+ .receita-individual main iframe{ width: 100%;}
+
+ main section.receita{max-width: 100%;}
+
+}
+
+@media(max-width: 900px){
+
+.container, .receita-individual {
+    width: 800px !important;
+    padding: 0 20px;
+    
+}
+lista-receitas article {padding: 10px;}
+}
+@media (max-width: 1100px){
+
+section .container .lista-receitas article {width: 100%;}
+.lista-receitas article .thumb{width: 60%;}
+
+
+    }
+    @media(max-width:600px){
+        aside{max-width: 100%;}
+    }
+   
+
+
