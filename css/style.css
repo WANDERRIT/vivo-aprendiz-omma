@@ -123,7 +123,7 @@ main section.receitas-principais h2 {
     font-weight: bold;
     padding: 5px 25px;
     text-decoration: none;
-    border-radius: 6px;
+    /* border-radius: 0px; */
 }
 
 section.banner-secundario {
@@ -218,7 +218,7 @@ main section.todas-receitas h2{
     display: flex;
 }*/
 main section.receita .container{
-    color: #FFA000;
+    /* color: #FFA000; */
     max-width: 100%;
 }
 
@@ -265,7 +265,7 @@ border-radius: 4px;
         margin: 0;
         text-transform: lowercase;
         text-align: center;
-        color: #FFA000;
+        /* color: #FFA000; */
     }
     aside h3{
         color: #FFA000;
@@ -383,10 +383,10 @@ lista-receitas article {padding: 10px;}
 
 section .container .lista-receitas article {width: 100%;}
 .lista-receitas article .thumb{width: 100%;}
-main section.todas-receitas .container{min-width: 0;}
-main section.todas-receitas .container{padding: 0px 0;}
-footer .container{display: flex;}
-footer .container{flex-direction: column;}
+main section.todas-receitas .container{min-width: 0; padding: 0px 0;}
+
+footer .container{display: flex; flex-direction: column;}
+
 
 }
 
@@ -396,7 +396,9 @@ footer .container{flex-direction: column;}
     div.risoto{padding: 0px;}
     .receita-individual {display: flex;
         flex-direction: column;
-        margin: 0px; padding: 0px;}
+        margin: 0px; padding: 0px;
+    
+    }
     
    
     section.receita{padding: 0px; margin: 10px;}
@@ -414,18 +416,21 @@ footer .container{flex-direction: column;}
     min-height:150px ;}
 
     div.receita-individual aside{
-        max-width: 100%;
-        
-        
-    }
-/*pagina 4*/
+        max-width: 100%;}
+
+       
 }
+
+/*pagina 4*/
 @media(max-width:600px){
     .banner-vertical {width: 30%;
     height: 500px;
     background-size: cover;
     background-position: initial;
     border-radius: 30px;}
+
+    
+    .formulario {width: 100%;}
 
 }
 
